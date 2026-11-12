@@ -599,3 +599,101 @@ footer small {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* DELIVERY SECTION */
+
+.delivery {
+    background: #f5eee3;
+    padding: 60px 8%;
+}
+
+.delivery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto 25px;
+}
+
+.delivery-card {
+    background: #fffaf2;
+    padding: 30px 18px;
+    text-align: center;
+    border: 1px solid #e9dccb;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.delivery-card:hover {
+    transform: translateY(-5px);
+}
+
+.delivery-card span {
+    font-size: 35px;
+}
+
+.delivery-card h3 {
+    color: #604a35;
+    font-family: 'Playfair Display', serif;
+    margin: 18px 0 12px;
+}
+
+.delivery-card p {
+    color: #70563c;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.delivery-note {
+    text-align: center;
+    color: #70563c;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .delivery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .delivery-card {
+        padding: 22px 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .delivery-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.topbar .social-small {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.topbar .social-small a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #faf9f7;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.topbar .social-small svg {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.topbar .social-small .facebook {
+    fill: currentColor;
+    stroke: none;
+}
